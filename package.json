@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server"
+    "serve": "live-server",
+    "start": "node server/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4",
     "live-server": "^1.2.1"
   }
 }
