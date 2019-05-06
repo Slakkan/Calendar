@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Calendar App</title>
+
+	<link rel="stylesheet" href="css/document.css">
+	<link rel="stylesheet" href="css/schedule.css">
+	<link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body>
+	<div class="pop-up">
+		<div class="schedule pop-up">
+			<h3 class="form-title"></h3>
+			<div class="form-error">Error</div>
+			<form class="schedule-form pop-up">
+				<div class="inputs pop-up">
+					<input type="text" class="from time" placeholder="12:00" />
+					<input type="text" class="to time" placeholder="13:00" />
+					<input type="text" class="description" placeholder="something to do" />
+				</div>
+				<button class="add-appointment">+</button>
+			</form>
+		</div>
+	</div>
+	<div class="content-container">
+		<div class="calendar">
+			<div class="bar">
+				<button class="selector minus"><</button>
+				<h3 class="month"></h3>
+				<button class="selector plus">></button>
+			</div>
+			<div class="dates">
+				<div class="weekday sunday">
+					<h4>SUN</h4>
+				</div>
+				<div class="weekday monday">
+					<h4>MON</h4>
+				</div>
+				<div class="weekday tuesday">
+					<h4>TUE</h4>
+				</div>
+				<div class="weekday wednesday">
+					<h4>WED</h4>
+				</div>
+				<div class="weekday thursday">
+					<h4>THU</h4>
+				</div>
+				<div class="weekday friday">
+					<h4>FRI</h4>
+				</div>
+				<div class="weekday saturday">
+					<h4>SAT</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/scheduleFunctions.js"></script>
+	<script src="./js/schedule.js"></script>
+	<script src="./js/calendarFunctions.js"></script>
+	<script src="./js/calendar.js"></script>
+</body>
+
+</html>

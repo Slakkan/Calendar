@@ -1,0 +1,122 @@
+.schedule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 8px;
+    border: 2px solid green;
+    border-radius: 8px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.schedule-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.form-title {
+    text-align: center;
+    margin: 8px;
+}
+
+.form-error {
+    text-align: center;
+    color: red;
+    font-style: italic;
+    display: none;
+}
+
+.inputs {
+    flex-grow: 0;
+}
+
+.input--edit {
+    background: lightyellow;
+}
+
+.time {
+    padding: 8px;
+    width: 15%;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px transparent black;
+    transition: .3s ease-in
+}
+
+.description {
+    padding: 8px;
+    width: 60%;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px transparent black;
+    transition: .3s ease-in
+}
+
+.add-appointment {
+    flex-shrink: 0;
+    font-weight: 1000;
+    width: 48px;
+    height: 48px;
+    background: lightgreen;
+    border-radius: 24px;
+    border: none;
+    outline: none
+}
+
+.add-appointment:hover {
+    background: green;
+    transition: 0.3s ease-in
+}
+
+.add-appointment:active {
+    background: lightgreen;
+    border: 2px solid green;
+    transition: 0s
+}
+
+.remove-appointment {
+    font-weight: 1000;
+    background: none;
+    width: 10%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: linear-gradient(lightcoral, coral) ;
+    opacity: .8;
+    border: none;
+    outline: none    
+}
+
+.remove-appointment:hover {
+    background: red;
+}
+
+.appointment {
+    display: flex;
+    margin-top: 8px; 
+    border-radius: 16px;
+    background: linear-gradient(lightgreen, green);
+}
+.appointment:hover {
+    background: linear-gradient(white, lightgreen);
+    border: 1px solid black ;
+}
+.appointment-time {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 15%;
+}
+
+.appointment-description {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 60%;
+    word-break: break-all;
+}

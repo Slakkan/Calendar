@@ -1,0 +1,78 @@
+.calendar {
+    border: 2px solid green;
+    border-radius: 4px;
+}
+
+.bar {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: greenyellow;
+    width: 100%;
+    flex-direction: row;
+}
+
+.selector {
+    width: 64px;
+    height: 32px;
+    background: white;
+    border-radius: 32px;
+    border: none;
+    outline: none
+}
+
+.selector:hover {
+    background: lightgreen;
+    border: 2px solid green;
+    transition: 0.3s ease-in
+}
+
+.dates {
+    display: flex
+}
+
+.weekday {
+    display: flex;
+    flex-direction: column;
+    min-width: 64px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: lightgreen;
+    line-height: 32px;
+}
+
+.day {
+    width: 64px;
+    height: 64px;
+    margin: 6px;
+    background: white;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+.day--low{
+    background: rgb(200, 200, 0)
+}
+
+.day--medium {
+    background: rgb(200, 125, 0)
+}
+
+.day--high {
+    background: rgb(200, 0, 0)
+}
+
+.day:hover {
+    border: 2px dashed green;
+    opacity: 1;
+}
+
+.day--other {
+    visibility: hidden;
+    width: 64px;
+    height: 64px;
+    margin: 6px;
+}
